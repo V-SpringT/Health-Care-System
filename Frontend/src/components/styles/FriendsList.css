@@ -1,0 +1,206 @@
+.friends-list {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.322);
+  display: flex;
+  flex-direction: column; 
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends-list h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.view-all-button {
+  background: none;
+  border: none;
+  color: #6a4c93;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.view-all-button svg {
+  margin-left: 5px;
+}
+
+.activity-tabs {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  background-color: #dfdfdfb4;
+  border-radius: 30px;
+}
+
+.activity-tabs button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #777777;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.activity-tabs button.active {
+  background-color: #6a4c93;
+  color: #ffffff;
+}
+
+.activity-tabs button:hover {
+  box-shadow: 0 0 3px #000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.friend-name {
+  font-weight: bold;
+  color: #333333;
+}
+
+.friend-activity {
+  font-size: 14px;
+  color: #777777;
+}
+
+.friend-time {
+  font-size: 12px;
+  color: #999999;
+}
+
+.friend-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.fitness-progress {
+  margin: none;
+}
+
+.fitness-progress h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: #333333;
+}
+
+.progress-chart {
+  display: flex;
+  align-items: center;
+}
+
+.chart-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #fdcb6e 0% 40%,
+    #00b894 40% 70%,
+    #e17055 70% 90%,
+    #6c5ce7 90% 100%
+  );
+}
+
+.chart-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.chart-center span {
+  display: block;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.progress-details {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.progress-details li {
+  font-size: 10px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.cardio-dot {
+  background-color: #00b894;
+}
+
+.stretching-dot {
+  background-color: #fdcb6e;
+}
+
+.treadmill-dot {
+  background-color: #e17055;
+}
+
+.strength-dot {
+  background-color: #6c5ce7;
+}
+
+.search-container input{
+  border-radius: 20px;
+}
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  color: rgb(64, 64, 64);
+  margin-right: 15px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.search-container input[type="text"] {
+  padding-right: 30px;
+}
